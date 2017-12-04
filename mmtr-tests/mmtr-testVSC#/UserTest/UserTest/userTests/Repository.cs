@@ -16,6 +16,11 @@ namespace UserTest.userTests
         {
             return Interlocked.Increment(ref lastID);
         }
+        
+        public static int showID()
+        {
+            return lastID;
+        }
 
         public void addUser(User user)
         {
